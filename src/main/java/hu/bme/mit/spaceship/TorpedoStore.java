@@ -31,7 +31,7 @@ public class TorpedoStore {
   private Random generator = new Random();
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
-      throw new IllegalArgumentException("numberOfTorpedos");
+      throw new IllegalArgumentException("numberOfTorpedos"); //Negatív, vagy a meglévőnél több torpedó kilövése
     }
 
     boolean success = false;
